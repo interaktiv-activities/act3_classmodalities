@@ -1,0 +1,191 @@
+/* FONTS */
+@font-face {
+    font-family: Akura;
+    src: url(FONTS/Akura\ Popo.ttf);
+}
+
+@font-face {
+    font-family: Arvo;
+    src: url(FONTS/Arvo/Arvo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Citrus;
+    src: url(FONTS/Citrus\ Gothic/);
+}
+
+/* GAME BOARD ELEMENTS */
+.game-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 740px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.prompt-container{
+    width: 550px;
+    height: 284.45px;
+    background-image: url("ASSETS/prompt-box.png");
+    background-size: 550px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 5px 0px;
+    flex-direction: column;
+}
+
+.prompt-text{
+    width: 380px;
+    margin: 0px 85px 0px 85px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Arvo;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.score{
+    font-family: Akura;
+    font-size: 32px;
+    color: #F2B84B;
+    margin: 0px 0px 10px 0px;
+}
+
+.choice-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.choice-a{
+    background-image: url(ASSETS/true.png);
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px; 
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    padding: 35px 20px 35px 96px;
+    font-family: Arvo;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 50px 0px 0px 0px;
+}
+
+.choice-b{
+    background-image: url(ASSETS/false.png);
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;   
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    padding: 35px 96px 35px 20px;
+    font-family: Arvo;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 50px 0px 0px 0px;
+}
+
+.choice-btn:hover{
+    transition-duration: 150ms;
+    transform: translateY(-0.50em);
+}
+
+.choice-btn:active{
+    transition-duration: 150ms;
+    transform: translateY(-0.25em);
+}
+
+/* TABLET MEDIA QUERIES */
+@media only screen and (max-width: 768px){
+    .game-board{
+        max-width: 450px;
+    }
+
+    .prompt-container{
+        width: 370px;
+        height: 191.508px;
+        background-size: 370px auto;
+        background-repeat: no-repeat;
+        margin: 0px 0px 5px 0px;
+    }
+    
+    .prompt-text{
+        width: 252px;
+        margin: 0px 59px 0px 59px;
+        font-size: 14px;
+    }
+    
+    .score{
+        font-size: 18px;
+        margin: 0px 0px 5px 0px;
+    }
+    
+    .choice-a{
+        width: 180px;
+        height: 180px;
+        background-size: 180px 180px;
+        padding: 27px 16px 27px 76px;
+        font-size: 14px;
+        margin: 50px 0px 0px 0px;
+    }
+    
+    .choice-b{
+        width: 180px;
+        height: 180px;
+        background-size: 180px 180px;
+        padding: 27px 76px 27px 16px;
+        font-size: 14px;
+        margin: 50px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 428px){
+    .game-board{
+        max-width: 330px;
+        height: auto;
+    }
+
+    .prompt-container{
+        width: 370px;
+        height: 191.508px;
+        background-size: 370px auto;
+        background-repeat: no-repeat;
+        margin: 0px 0px 5px 0px;
+    }
+    
+    .prompt-text{
+        width: 252px;
+        margin: 0px 59px 0px 59px;
+        font-size: 14px;
+    }
+    
+    .score{
+        font-size: 18px;
+        margin: 0px 0px 5px 0px;
+    }
+    
+    .choice-a{
+        width:  128px;
+        height:  128px;
+        background-size: 128px 128px;
+        padding: 27px 16px 27px 76px;
+        font-size: 12px;
+        margin: 50px 0px 0px 0px;
+    }
+    
+    .choice-b{
+        width: 128px;
+        height:  128px;
+        background-size: 128px 128px;
+        padding: 27px 76px 27px 16px;
+        font-size: 12px;
+        margin: 50px 0px 0px 0px;
+    }
+}
