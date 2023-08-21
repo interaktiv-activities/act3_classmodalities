@@ -63,7 +63,7 @@ let questionBank = [
         "The maximum number of students in a class is 30.", false
     ],
     [
-        "Some delivery platforms used for online deliveries are Zoom, BigSky, Google Meet, and Facebook.", true
+        "Some delivery platforms used for online deliveries are Zoom, BigSky, and Google Meet.", true
     ],
     [
         "Synchronous sessions are scheduled classes that require your attendance as set by your professor.", true
