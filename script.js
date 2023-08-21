@@ -86,9 +86,6 @@ let questionBank = [
     [
         "The course syllabus provides essential information about the course, including its description, learning outcomes, structure, and plan.", true
     ],
-    [
-        "Hybrid Delivery offers dual classroom set-ups, where students from home can attend classes with the students attending face-to-face.", true
-    ]
 ]
 
 function startGame() {
